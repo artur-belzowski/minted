@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kolekcja</title>
+  </head>
+  <body>
+    <h1>Kolekcja {{ collection_name }}</h1>
+    <ul>
+      {% for asset in assets %}
+      <li>
+        <p>Token ID: {{ asset['token_id'] }}</p>
+        <p>Rarity Rank: {{ asset['rarity_rank'] }}</p>
+        <p>NFT Price: {{ asset['nft_price'] }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
